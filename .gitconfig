@@ -1,0 +1,14 @@
+[user]
+	signingkey = EE4EA6B504D241F8
+	name = kalwabed
+	email = 49640654+kalwabed@users.noreply.github.com
+[commit]
+	gpgsign = true
+[gpg]
+	program = /usr/bin/gpg
+[core]
+	editor = nano
+[init]
+	defaultBranch = main
+[push]
+	autoSetupRemote = true
