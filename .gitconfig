@@ -1,0 +1,14 @@
+[user]
+	signingkey = A41A5C87D82389E7
+	email = 49640654+kalwabed@users.noreply.github.com
+	name = kalwabed
+[commit]
+	gpgsign = true
+[gpg]
+	format = ssh
+[core]
+	editor = nano
+[init]
+	defaultBranch = main
+[push]
+	autoSetupRemote = true
