@@ -4,11 +4,11 @@
 	name = kalwabed
 [commit]
 	gpgsign = true
-[gpg]
-	format = ssh
 [core]
 	editor = nano
 [init]
 	defaultBranch = main
 [push]
 	autoSetupRemote = true
+[pull]
+	rebase = true

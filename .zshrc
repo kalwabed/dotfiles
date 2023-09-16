@@ -1,3 +1,6 @@
+# zellij
+eval "$(zellij setup --generate-auto-start zsh)"
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -8,9 +11,15 @@ fi
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+export CHROME_PATH=/bin/brave
 export GPG_TTY=$TTY
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:$HOME/.pub-cache/bin
+export PATH=$PATH:$HOME/.local/bin:$PATH
+
+# deno
+export DENO_INSTALL="/home/kalwabed/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
 
 # postgresql
 export PGDATA=/var/lib/postgres/data
@@ -21,9 +30,7 @@ export PATH=$PATH:/usr/local/flutter/bin
 # android studio
 export PATH=$PATH:/usr/local/android-studio/bin
 
-
-# zoxide
-eval "$(zoxide init zsh)"
+export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 
 # fnm
 export PATH="/home/kalwabed/.local/share/fnm:$PATH"
@@ -100,7 +107,9 @@ zstyle ':omz:update' mode reminder
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git gpg-agent fnm golang yarn docker docker-compose kubectl zsh-completions zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git gitfast aliases command-not-found archlinux gpg-agent ssh-agent fnm golang rust fzf-tab zoxide yarn docker docker-compose kubectl zsh-autosuggestions zsh-syntax-highlighting zsh-completions)
+
+# fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 
 source $ZSH/oh-my-zsh.sh
 
@@ -112,11 +121,11 @@ source $ZSH/oh-my-zsh.sh
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+if [[ -n $SSH_CONNECTION ]]; then
+ export EDITOR='lvim'
+else
+ export EDITOR='helix'
+fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -131,8 +140,11 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias cl=clear
 alias cd=z
+alias find=bfs
 alias cat=bat
-alias ls=exa
+alias ls=eza
+alias hx=helix
+alias lv=lvim
 
 # git alias
 alias gbclear='git branch | grep -v "main" | xargs git branch -D'
