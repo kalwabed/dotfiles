@@ -5,7 +5,7 @@
 [commit]
 	gpgsign = true
 [core]
-	editor = nano
+	editor = lvim
 [init]
 	defaultBranch = main
 [push]
