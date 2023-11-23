@@ -4,9 +4,9 @@ eval "$(zellij setup --generate-auto-start zsh)"
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
+# if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+#   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+# fi
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
@@ -43,7 +43,7 @@ export ZSH="/home/kalwabed/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="powerlevel10k/powerlevel10k"
+# ZSH_THEME="powerlevel10k/powerlevel10k"
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#6d6d6d,bold,underline"
 
@@ -142,7 +142,7 @@ alias cl=clear
 alias cd=z
 alias find=bfs
 alias cat=bat
-alias ls=eza
+alias ls="eza --icons"
 alias hx=helix
 alias lv=lvim
 
@@ -158,7 +158,7 @@ alias pnu="pnpm up -Li"
 alias pnd="pnpm run dev"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # pnpm
 export PNPM_HOME="/home/kalwabed/.local/share/pnpm"
@@ -184,3 +184,9 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 # proto
 export PROTO_ROOT="$HOME/.proto"
 export PATH="$PROTO_ROOT/bin:$PATH"
+
+# Turso
+export PATH="/home/kalwabed/.turso:$PATH"
+
+eval "$(atuin init zsh)"
+eval "$(starship init zsh)"

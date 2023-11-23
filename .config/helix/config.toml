@@ -1,1 +1,4 @@
-theme = "tokyonight"
+theme = "kanagawa"
+
+[editor.statusline]
+right = ["diagnostics", "selections", "position", "file-encoding", "version-control"]
