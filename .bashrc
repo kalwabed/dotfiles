@@ -90,3 +90,5 @@ _open_files_for_editing() {
 export PATH="/home/kalwabed/.local/share/fnm:$PATH"
 eval "`fnm env`"
 . "$HOME/.cargo/env"
+
+source /home/kalwabed/.config/broot/launcher/bash/br
