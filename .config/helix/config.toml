@@ -1,4 +1,4 @@
-theme = "kanagawa"
+theme = "catppuccin_mocha"
 
 [editor.statusline]
-right = ["diagnostics", "selections", "position", "file-encoding", "version-control"]
+right = ["diagnostics", "selections", "register", "position", "file-encoding", "version-control"]
