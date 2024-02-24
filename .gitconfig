@@ -1,1 +1,14 @@
-.dotfiles/gitconfig
+[user]
+	signingKey = 4438B2B80323BBAE
+	email = 49640654+kalwabed@users.noreply.github.com
+	name = kalwabed
+[commit]
+	gpgsign = true
+[core]
+	editor = nvim
+[init]
+	defaultBranch = main
+[push]
+	autoSetupRemote = true
+[pull]
+	rebase = true
