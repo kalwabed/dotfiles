@@ -7,6 +7,7 @@ export PATH="/home/kawahijen/.local/share/fnm:$PATH"
 eval "`fnm env`"
 
 fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
+EDITOR=nvim
 
 # Path to your oh-my-zsh installation.
 ZSH=/usr/share/oh-my-zsh/
