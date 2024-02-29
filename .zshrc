@@ -98,6 +98,7 @@ alias cd=z
 alias find=fd
 alias cat=bat
 alias hx=helix
+alias top=btop
 
 # pnpm alias
 alias pn="pnpm"
