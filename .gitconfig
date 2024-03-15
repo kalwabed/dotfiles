@@ -12,3 +12,5 @@
 	autoSetupRemote = true
 [pull]
 	rebase = true
+[alias]
+	ai = !git add -A && git commit -am \"$(bun ~/.aicommit/index.ts --apikey AIzaSyAceEMcMmEtUV-bZANpA1_k9812U2vucNI)\"

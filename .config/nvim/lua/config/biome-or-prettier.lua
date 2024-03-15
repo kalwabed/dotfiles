@@ -35,6 +35,7 @@ return {
         typescript = biome_lsp_or_prettier,
         javascriptreact = biome_lsp_or_prettier,
         typescriptreact = biome_lsp_or_prettier,
+        svelte = biome_lsp_or_prettier,
         json = { "biome" },
         jsonc = { "biome" },
       },
