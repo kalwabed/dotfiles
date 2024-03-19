@@ -1,4 +1,5 @@
 return {
+  { "gleam-lang/gleam.vim" },
   -- discord presence
   -- {
   --   "IogaMaster/neocord",
