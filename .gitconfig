@@ -6,6 +6,7 @@
 	gpgsign = true
 [core]
 	editor = nvim
+  pager = delta
 [init]
 	defaultBranch = main
 [push]
@@ -14,3 +15,15 @@
 	rebase = true
 [alias]
 	ai = !git add -A && git commit -am \"$(bun ~/.aicommit/index.ts --apikey AIzaSyAceEMcMmEtUV-bZANpA1_k9812U2vucNI)\"
+
+[interactive]
+  diffFilter = delta --color-only
+
+[delta]
+  navigate = true    # use n and N to move between diff sections
+
+[merge]
+  conflictstyle = diff3
+
+[diff]
+  colorMoved = default
