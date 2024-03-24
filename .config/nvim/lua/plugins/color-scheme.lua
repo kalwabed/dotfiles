@@ -1,5 +1,12 @@
 return {
-  -- add catppuccin colorscheme
+  -- Configure LazyVim to load gruvbox
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "rose-pine-main",
+    },
+  },
+
   {
     "catppuccin/nvim",
     lazy = false,
@@ -43,14 +50,10 @@ return {
     },
   },
 
-  -- add gruvbox
   { "ellisonleao/gruvbox.nvim" },
-
-  -- Configure LazyVim to load gruvbox
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "gruvbox",
-    },
-  },
+  { "samharju/synthweave.nvim" },
+  { "marko-cerovac/material.nvim" },
+  { "rose-pine/neovim", name = "rose-pine" },
+  { "luisiacc/gruvbox-baby" },
+  { "olivercederborg/poimandres.nvim" },
 }
