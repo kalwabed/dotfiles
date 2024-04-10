@@ -15,7 +15,7 @@ ZSH=/usr/share/oh-my-zsh/
 zstyle ':omz:update' mode reminder
 
 # List of plugins used
-plugins=(git gitfast fnm aliases archlinux gpg-agent ssh-agent fzf-tab zoxide yarn docker docker-compose sudo zsh-256color zsh-autosuggestions zsh-syntax-highlighting zsh-completions)
+plugins=(git gitfast fnm aliases archlinux gpg-agent ssh-agent fzf-tab zoxide yarn docker docker-compose deno sudo zsh-256color zsh-autosuggestions zsh-syntax-highlighting zsh-completions)
 source $ZSH/oh-my-zsh.sh
 
 # In case a command is not found, try to find the package that has it
@@ -82,6 +82,10 @@ eval "$(atuin init zsh)"
 
 source /home/kawahijen/.config/broot/launcher/bash/br
 
+# deno
+export DENO_INSTALL="/home/kawahijen/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
+
 # bun completions
 [ -s "/home/kawahijen/.bun/_bun" ] && source "/home/kawahijen/.bun/_bun"
 
@@ -99,6 +103,7 @@ alias find=fd
 alias cat=bat
 alias hx=helix
 alias top=btop
+alias icat="kitten icat"
 
 # pnpm alias
 alias pn="pnpm"
