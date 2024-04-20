@@ -71,7 +71,7 @@ alias vc='code --disable-gpu' # gui code editor
 alias ssh='kitten ssh'
 
 #Display Pokemon
-krabby random --no-title
+krabby random
 
 
 # fnm
@@ -112,3 +112,6 @@ alias pna="pnpm add"
 alias pnad="pnpm add -D"
 alias pnu="pnpm up -Li"
 alias pnd="pnpm run dev"
+
+# Turso
+export PATH="/home/kawahijen/.turso:$PATH"
