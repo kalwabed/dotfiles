@@ -15,7 +15,7 @@ ZSH=/usr/share/oh-my-zsh/
 zstyle ':omz:update' mode reminder
 
 # List of plugins used
-plugins=(git gitfast fnm aliases archlinux gpg-agent ssh-agent fzf-tab zoxide yarn docker docker-compose deno sudo zsh-256color zsh-autosuggestions zsh-syntax-highlighting zsh-completions)
+plugins=(git gitfast fnm aliases archlinux gpg-agent ssh-agent fzf-tab zoxide docker docker-compose deno sudo zsh-256color zsh-autosuggestions zsh-syntax-highlighting zsh-completions)
 source $ZSH/oh-my-zsh.sh
 
 # In case a command is not found, try to find the package that has it
@@ -66,13 +66,13 @@ alias pa='$aurhelper -Ss' # list availabe package
 alias pc='$aurhelper -Sc' # remove unused cache
 alias po='$aurhelper -Qtdq | $aurhelper -Rns -' # remove unused packages, also try > $aurhelper -Qqd | $aurhelper -Rsu --print -
 alias vc='code --disable-gpu' # gui code editor
+alias yy=yazi
 
 # Fixes "Error opening terminal: xterm-kitty" when using the default kitty term to open some programs through ssh
 alias ssh='kitten ssh'
 
 #Display Pokemon
 krabby random
-
 
 # fnm
 export PATH="/home/kawahijen/.local/share/fnm:$PATH"
