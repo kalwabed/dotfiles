@@ -7,5 +7,5 @@
 0|Graphite-Mono|StepanVanzuriak.mono~mono dark|~/.config/swww/Graphite-Mono/japan_lake.jpg
 0|Cyberpunk-Edge|JWSandeman.cyberpunk2077-theme~cyberpunk2077|~/.config/swww/Cyberpunk-Edge/david.jpg
 0|Frosted-Glass|msnilshartmann.blue-light~Blue Light Theme|~/.config/swww/Frosted-Glass/lake_mountain.jpg
-1|Gruvbox-Retro|jdinhlife.gruvbox~Gruvbox Dark Medium|~/.config/swww/Gruvbox-Retro/future_town.jpg
+1|Gruvbox-Retro|jdinhlife.gruvbox~Gruvbox Dark Medium|~/.config/swww/Gruvbox-Retro/wall.jpg
 0|Synth-Wave|robbowen.synthwave-vscode~SynthWave '84|~/.config/swww/Synth-Wave/waves.jpg

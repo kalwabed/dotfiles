@@ -1,5 +1,29 @@
 return {
   { "gleam-lang/gleam.vim" },
+
+  {
+    "smoka7/hop.nvim",
+    opts = {
+      multi_windows = true,
+      keys = "htnsueoaidgcrlypmbkjvx",
+      uppercase_labels = true,
+    },
+    keys = {
+      {
+        "<leader>fj",
+        desc = "Hop into the buffer",
+        function()
+          require("hop").hint_words()
+        end,
+        mode = { "n", "x", "o" },
+      },
+    },
+  },
+  {
+    "smjonas/inc-rename.nvim",
+    cmd = "IncRename",
+    config = true,
+  },
   -- discord presence
   -- {
   --   "IogaMaster/neocord",
