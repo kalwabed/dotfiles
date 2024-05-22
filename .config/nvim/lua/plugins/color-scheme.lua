@@ -3,7 +3,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "gruvbox",
+      colorscheme = "wildcharm",
     },
   },
 
@@ -56,4 +56,5 @@ return {
   { "rose-pine/neovim", name = "rose-pine" },
   { "luisiacc/gruvbox-baby" },
   { "olivercederborg/poimandres.nvim" },
+  { "kdheepak/monochrome.nvim" },
 }

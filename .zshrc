@@ -97,6 +97,10 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 export PNPM_HOME="$HOME/.local/share/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 
+# rust cargo
+export CARGO_HOME="$HOME/.cargo/bin"
+export PATH="$CARGO_HOME:$PATH"
+
 alias cl=clear
 alias cd=z
 alias find=fd

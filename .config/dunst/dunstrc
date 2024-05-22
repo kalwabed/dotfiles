@@ -451,15 +451,15 @@
     #default_icon = /path/to/icon
 
 [urgency_low]
-    background = "#252625"
-    foreground = "#DBD9DB"
-    frame_color = "#363935"
+    background = "#0E1B22"
+    foreground = "#FDE4D1"
+    frame_color = "#083F50"
     icon = "~/.config/dunst/icons/hyprdots.svg"
     timeout = 10
 
 [urgency_normal]
-    background = "#816255"
-    foreground = "#DBD9DB"
-    frame_color = "#645C2F"
+    background = "#076B75"
+    foreground = "#FDE4D1"
+    frame_color = "#6C7A0A"
     icon = "~/.config/dunst/icons/hyprdots.svg"
     timeout = 10
