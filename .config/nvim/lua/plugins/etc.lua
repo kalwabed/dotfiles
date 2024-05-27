@@ -24,11 +24,6 @@ return {
     cmd = "IncRename",
     config = true,
   },
-  -- discord presence
-  -- {
-  --   "IogaMaster/neocord",
-  --   event = "VeryLazy",
-  -- },
 
   -- Add Eslint and use it for formatting
   -- {
