@@ -3,6 +3,8 @@
 eval "$(starship init zsh)"
 
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
+export LC_CTYPE=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
 
 # fnm
 export PATH="/home/khawarizm/.local/share/fnm:$PATH"

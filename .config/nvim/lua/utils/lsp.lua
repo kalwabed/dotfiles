@@ -1,0 +1,1 @@
+-- take inspiration from https://github.com/RayGuo-ergou/dotfiles/blob/main/nvim/lua/ergou/plugins/lsp.lua
